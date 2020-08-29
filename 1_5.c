@@ -53,7 +53,6 @@
 
     int Quadratic_equation (double a, double b, double c, double* x1, double* x2)
       {
-
       if (fabs(a) <= accuracy)
         {
         return Linear_equation (b, c, x1);
@@ -84,7 +83,6 @@
 
     int Linear_equation (double a, double b, double* x1) /*Solves a linear equation and returns the number of roots*/
       {
-
       if (fabs(a) <= accuracy)
         {
         return (b == 0)? Inf_nRoots : No_Roots;
