@@ -16,12 +16,13 @@
       };
 
 
+  const double accuracy = pow(10,-12);
+
+
   int main ()
     {
     printf ("The solution to the quadratic equation\n\n");
     printf ("Enter coefficients a, b, c:\n");
-
-    const double accuracy = pow(10,-12);
 
     double a = NAN, b = NAN, c = NAN;
     scanf ("%lf %lf %lf", &a, &b, &c);
@@ -52,7 +53,6 @@
 
     int Quadratic_equation (double a, double b, double c, double* x1, double* x2)
       {
-      const double accuracy = pow(10,-12);
 
       if (fabs(a) <= accuracy)
         {
@@ -84,7 +84,6 @@
 
     int Linear_equation (double a, double b, double* x1) /*Solves a linear equation and returns the number of roots*/
       {
-      const double accuracy = pow(10,-12);
 
       if (fabs(a) <= accuracy)
         {
