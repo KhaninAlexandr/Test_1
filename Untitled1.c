@@ -21,10 +21,10 @@
     printf ("The solution to the quadratic equation\n\n");
     printf ("Enter coefficients a, b, c:\n");
 
-    double a = 0, b = 0, c = 0;
+    double a = NaN, b = NaN, c = NaN;
     scanf ("%lf %lf %lf", &a, &b, &c);
 
-    double x1 = 0, x2 = 0; /* корни уравнения */
+    double x1 = NaN, x2 = NaN; /* корни уравнения */
 
     int solution = Quadratic_equation(a, b, c, &x1, &x2);
 
@@ -52,7 +52,7 @@
       {
       if (a == 0)
         {
-        Linear_equation (b, c, x1);
+        return Linear_equation (b, c, x1);
         }
       else /* a != 0 */
         {
