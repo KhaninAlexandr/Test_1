@@ -27,6 +27,8 @@
 
   int main ()
     {
+    Test_Linear_equation();
+    Test_Quadratic_equation();
     printf ("The solution to the quadratic equation\n\n");
     printf ("Enter coefficients a, b, c:\n");
 
@@ -127,21 +129,13 @@
 
       TEST
 
-       a  = 0, b = 1;
-       *x1 = 0;
-       result = Linear_equation(a, b, x1);
-       expectation = No_Roots;
-
-      TEST
-
-       a  = 1, b = 1e-15;
-       *x1 = 0;
-       result = Linear_equation(a, b, x1);
-       expectation = One_Root;
+         a  = 1, b = 1;
+         *x1 = -1;
+         result = Linear_equation(a, b, x1);
+         expectation = Two_Roots;
 
       TEST
       }
-
 
       void Test_Quadratic_equation()
       {
@@ -187,5 +181,6 @@
 
        TEST
        }
+
 
 
